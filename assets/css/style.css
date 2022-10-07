@@ -9,13 +9,13 @@ body {
   transition: all .4s linear;
 }
 :root {
-  --bg-red: #4d0210;
+  --bg-red: #fff;
 }
 
 
 .header {
   box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.1);
-background-color: rgba(0, 0, 0, 0.95);
+background-color: #310813;
 }
 .header ul li a {
   color: #fff;
@@ -28,7 +28,8 @@ padding: 10px 15px !important;
 transition: all .4s linear;
 }
 .header .logo img {
-  width: 100px;
+  width: 80px;
+  padding: 10px 0;
 }
 .header ul li a.playnow {
   border: 1px solid #fff;
@@ -81,8 +82,8 @@ margin-bottom: 30px;
   padding-bottom: 100px;
 }
 .download {
-  border: 1px solid #252525;
-  background: var(--bg-red);
+  border: 1px solid #310813;
+  background: #310813;
   color: #fff !important;
   transition: all .4s linear;
   white-space: nowrap;
@@ -103,16 +104,17 @@ margin-bottom: 30px;
 background: url(../img/sectionback-new.png) no-repeat;
 background-size: contain;
 background-position: center;
+background-attachment: fixed;
 
 }
 .globalsensation {
   background-position: top right;
 }
 .bgcolorred {
-  background-color: var(--bg-red);
+  background-color: transparent;
 }
 .amazingsc {
-  color: #fff;
+  color: #252525;
   text-transform: uppercase;
 letter-spacing: 2px;
 text-transform: uppercase;
@@ -123,29 +125,29 @@ margin-bottom: 10px;
 .amazingsc::before {
   left: 0;
   right: 0;
-  background: #d4931b;
+  background: #310813;
   margin: 0px auto;
 } 
 .section-sub {
   color: #fff;
 }
 .section-sub {
-  color: #fff;
+  color: #252525;
 }
 .amazing-content h3 {
-  color: #d4931b;
+  color: #310813;
   font-weight: 600;
 font-size: 20px;
 text-transform: capitalize;
 }
 .amazing-content p {
-  color: #e0d1bd;
+  color:#252525;
 }
 .amazing-icon {
   width: 60px !important;
   height: 60px;
-  border: 1px solid #d4931b;
-  box-shadow: 0 0 0 2px #fff;
+  border: 1px solid #fff;
+box-shadow: 0 0 0 2px #310813;
   border-radius: 50%;
   transition: all ease-in 0.25s;
   display: flex;
@@ -155,7 +157,7 @@ justify-content: center;
 }
 .amazing-icon i {
   font-size: 30px;
-  color: #d4931b;
+  color: #310813;
   width: 60px;
   display: flex;
 align-items: center;
@@ -167,7 +169,10 @@ height: 100%;
   margin-right: 20px;
 }
 .amazindall:hover .amazing-icon {
-  background: #fff;
+  background: #310813;
+}
+.amazindall:hover .amazing-icon i {
+  color: #fff;
 }
 .amazindall {
   margin-bottom: 70px;
@@ -225,7 +230,7 @@ height: 100%;
 .loopslide .owl-nav button {
   width: 40px;
   height: 40px;
-  background: var(--bg-red) !important;
+  background: #310813 !important;
   border-radius: 50%;
   margin-right: 15px;
   position: relative;
@@ -235,12 +240,16 @@ justify-content: center;
 }
 .loopslide .owl-nav button span {
   color: #fff;
-  font-size: 38px;
+  font-size: 38px;position: relative;
+top: -3px;
 }
 .loopslide .owl-nav.disabled, .loopslide .owl-nav {
   display: flex !important;
   justify-content: center;
   margin-top: 60px;
+}
+.loopslide .owl-nav button.disabled {
+  background: #bec0c2 !important;
 }
 .contactus h2 {
   color: #fff;
@@ -359,7 +368,7 @@ justify-content: center;
   width: 50px;
 }
 .header ul li a.active {
-  color: red;
+  color: #fbc129;
 }
 .section-space1 {
   margin-top: 30px;
@@ -435,7 +444,11 @@ justify-content: center;
   border-radius: 8px;
 }
 .most_game img {
-  border: 2px solid #fff;border-radius: 5px;
+  border-radius: 5px;
+}
+.container-fluid.footer {
+  background: #310813 !important;
+  padding-top: 60px !important;
 }
 
 
