@@ -100,13 +100,7 @@ margin-bottom: 30px;
   margin-left: 0;
   visibility: visible;
 }
-.bg-img {
-background: url(../img/sectionback-new.png) no-repeat;
-background-size: contain;
-background-position: center;
-background-attachment: fixed;
 
-}
 .globalsensation {
   background-position: top right;
 }
