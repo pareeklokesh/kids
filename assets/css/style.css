@@ -37,7 +37,7 @@ border-radius: 4px;
 padding: 8px 30px !important;
 }
 .header ul li a:hover {
-  color: red;
+  color: #fbc129;
 }
 .header ul li a.playnow:hover {
 border-color: red;
