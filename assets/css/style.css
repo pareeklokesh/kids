@@ -434,6 +434,9 @@ justify-content: center;
 .loopslide img {
   border-radius: 8px;
 }
+.most_game img {
+  border: 2px solid #fff;border-radius: 5px;
+}
 
 
 
