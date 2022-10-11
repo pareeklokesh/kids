@@ -529,7 +529,23 @@ font-weight: 700;
   left: 0;
   top: 6px;
 }
+.playstore {
+  border: 1px solid #a0a0a0;
+  border-radius: 6px;
+  height: 41px;
+}
 
+
+
+
+@media (min-width: 992px) {
+  .loopslide .owl-nav.disabled, .loopslide .owl-nav {
+  display: none !important;
+}
+.header ul{
+  align-items: center;
+}
+}
 
 @media (max-width: 767px) {
   #fooer {
