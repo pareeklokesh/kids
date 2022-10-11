@@ -232,23 +232,7 @@ letter-spacing: 2px;">Screenshots</h2>
 </div>
 <!-- Footer End! -->
 
- <script>
-  jQuery(document).ready(function($) {
-              $('.phone-slide').owlCarousel({
-                center: true,
-                items: 1,
-                loop: true,
-                margin: 10,autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true,
-                responsive: {
-                  600: {
-                    items: 1
-                  }
-                }
-              });
-              });
-</script>
+
 <script>
   var owl = $('.loopslide');
 owl.owlCarousel({
@@ -276,41 +260,7 @@ owl.owlCarousel({
     }
 });
 </script>
-<script>
-      $( document ).ready(function() {  
-        downloadFile();
-    });
-        var BASE_URL = 'https://api.bopanel.xyz/index.php/Web_service/';
 
-    function downloadFile(){
-        var client_id        = "127";
-          var formData = new FormData();
-          formData.append('device_type','android');
-          formData.append('client_id',client_id);
-          var api_url1=BASE_URL+"getversion";
-        $.ajax({
-            url:api_url1,
-            method:"post",
-            data: formData,
-            dataType: 'JSON',
-            processData: false,
-            contentType: false,
-
-            success: function(data){
-                
-                var result=data;
-                if(result.status==1){
-
-                // filedownload(result.app_link,'App');
-
-                 $("#filedownload").attr("href",result.app_link);
-                 $("#filedownload2").attr("href",result.app_link);
-                 console.log(result.app_link);
-                }
-              }
-        });
-    }
-</script>
 
 </body>
 </html>

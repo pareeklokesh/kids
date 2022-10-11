@@ -115,10 +115,7 @@ In The Background Under10 is a gaming site founded in 2022, believes in the high
     <div class="row align-items-center">
         <div class="col-md-12 copy copyright_text">
             <!-- <p class="text-center text-white m-0" style="font-size: 12px;padding-top: 10px;">Copyright © 2022 3 Baan All Rights Reserved.</p> -->
-            <span style="text-align: center;color: #fff;">
-              <a href="#">
-                <font color="white">F.A.Q</font>
-              </a> | 
+            <span style="text-align: center;color: #fff;"> 
 <a href="#" style="padding-left: 5px;">
   <font color="white"><a href="privacy-policy.html" class="text-white">Privacy Policy</a> | <a href="terms-condition.html" class="text-white">Terms of Service</a></font>
 </a> © 2022</span>
@@ -131,41 +128,6 @@ In The Background Under10 is a gaming site founded in 2022, believes in the high
 <!-- Footer End! -->
 
  
-<script>
-      $( document ).ready(function() {  
-        downloadFile();
-    });
-        var BASE_URL = 'https://api.bopanel.xyz/index.php/Web_service/';
-
-    function downloadFile(){
-        var client_id        = "127";
-          var formData = new FormData();
-          formData.append('device_type','android');
-          formData.append('client_id',client_id);
-          var api_url1=BASE_URL+"getversion";
-        $.ajax({
-            url:api_url1,
-            method:"post",
-            data: formData,
-            dataType: 'JSON',
-            processData: false,
-            contentType: false,
-
-            success: function(data){
-                
-                var result=data;
-                if(result.status==1){
-
-                // filedownload(result.app_link,'App');
-
-                 $("#filedownload").attr("href",result.app_link);
-                 $("#filedownload2").attr("href",result.app_link);
-                 console.log(result.app_link);
-                }
-              }
-        });
-    }
-</script>
 
 </body>
 </html>
